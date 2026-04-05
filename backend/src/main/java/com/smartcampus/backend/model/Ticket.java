@@ -1,7 +1,10 @@
 package com.smartcampus.backend.model;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aca5cc4dbb702845b9bc8db8df45ab69dda806d9
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -90,3 +93,7 @@ public class Ticket {
         OPEN, IN_PROGRESS, RESOLVED, CLOSED
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> aca5cc4dbb702845b9bc8db8df45ab69dda806d9
