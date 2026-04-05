@@ -5,8 +5,8 @@ import { AuthProvider, useAuth } from './context/AuthContext'
 import Navbar from './components/NavBar'
 // import Dashboard from './pages/Dashboard'
 import ResourcesPage from './pages/ResourcesPage'
-// import BookingsPage from './pages/BookingsPage'
-// import TicketsPage from './pages/TicketsPage'
+import BookingsPage from './pages/BookingsPage'
+import TicketsPage from './pages/TicketsPage'
 // import NotificationsPage from './pages/NotificationsPage'
 import LoginPage from './pages/LoginPage'
 
@@ -19,14 +19,15 @@ function AppLayout() {
       <Navbar />
       <main className="main-content">
         <Routes>
-          {
-            //<Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/resources" element={<ResourcesPage />} />
-            // <Route path="/bookings" element={<BookingsPage />} />
-            // <Route path="/tickets" element={<TicketsPage />} />
-            // <Route path="/notifications" element={<NotificationsPage />} />
-            // <Route path="*" element={<Navigate to="/dashboard" replace />} /> 
-          }
+
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/bookings" element={<BookingsPage />} />
+          <Route path="/tickets" element={<TicketsPage />} />
+
+          {/* <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} /> */}
+
         </Routes>
       </main>
     </div>
